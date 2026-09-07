@@ -60,8 +60,8 @@ const ES = {
   
   "edu.2.text":  " ",
 
-  "exp.1.title": "NarrArt",
-  "exp.1.text":  "Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcast, leer libros, ademas de escuchar canciones mientras  lees",
+  "exp.1.title": "[NarrArt]",
+  "exp.1.text":  "[Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcast, leer libros, ademas de escuchar canciones mientras  lees]",
   "exp.2.title": "[Rol o tipo de proyecto]",
   "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
 

@@ -58,7 +58,7 @@ const ES = {
   "edu.1.title": "Técnico Profesional en Programación Web",
   "edu.1.text":  "",
   
-  "edu.2.text":  "[Qué aprendiste y para qué te sirve.]",
+  "edu.2.text":  "",
 
   "exp.1.title": "[Rol o tipo de proyecto]",
   "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",

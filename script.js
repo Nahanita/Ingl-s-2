@@ -57,21 +57,20 @@ const ES = {
 
   "edu.1.title": "Técnico Profesional en Programación Web",
   "edu.1.text":  " ",
-  
   "edu.2.text":  " ",
 
   "exp.1.title": "[NarrArt]",
   "exp.1.text":  "[Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcast, leer libros, ademas de escuchar canciones mientras  lees]",
-  "exp.2.title": "[Rol o tipo de proyecto]",
-  "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "exp.2.title": "[Calculadora]",
+  "exp.2.text":  "[Una calculadora simple, con java script. Usando Eclipse]",
 
   "portfolio.title": "Proyectos",
-  "project.1.title": "[Nombre del proyecto]",
-  "project.1.text":  "[Tecnologías usadas]",
-  "project.2.title": "[Nombre del proyecto]",
-  "project.2.text":  "[Tecnologías usadas]",
-  "project.3.title": "[Nombre del proyecto]",
-  "project.3.text":  "[Tecnologías usadas]",
+  "project.1.title": "[NarrArt]",
+  "project.1.text":  "[HTML5, CSS, JAVASCRIPT]",
+  "project.2.title": "[Calculadora]",
+  "project.2.text":  "[JavaScript, CSS]",
+  "project.3.title": "[RutaSafe]",
+  "project.3.text":  "[Laravel 11, Leaflet, CSS]",
 
   "contact.title":         "Contacto",
   "contact.intro":         "[¿Tienes un proyecto o una vacante? Escríbeme.]",

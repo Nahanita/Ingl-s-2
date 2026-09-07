@@ -134,8 +134,8 @@ const EN = {
   "edu.2.title": "[Course or certificate]",
   "edu.2.text":  "[What you learned and how you use it.]",
 
-  "exp.1.title": "[Role or type of project]",
-  "exp.1.text":  "[What you did, which tools you used, and what the result was.]",
+  "exp.1.title": "",
+  "exp.1.text":  "",
   "exp.2.title": "[Role or type of project]",
   "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
 

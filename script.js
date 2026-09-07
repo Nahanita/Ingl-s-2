@@ -27,7 +27,7 @@ const ES = {
   "hero.role": "Desarrollador Web · Soporte Técnico",
 
   "about.title":          "Sobre Mí",
-  "about.text":           "[Actualmente, soy estudiante de ingeniería de sistemas en la UniEspinal, me interesa la creación y diseño de plataformas web]",
+  "about.text":           "[Actualmente, soy estudiante de ingeniería de sistemas en la UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones que sean funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa, curiosa y comrpometida con seguir aprendiendo y fortaleciendo mis conocimientos en programación y desarrollo de software.]",
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
   "about.valueLocation":  "[Espinal], Colombia",
@@ -38,10 +38,10 @@ const ES = {
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
-  "interest.1": "CÓDIGO",
-  "interest.2": "SOPORTE",
-  "interest.3": "LECTURA",
-  "interest.4": "JUEGOS",
+  "interest.1": "DESARROLLO WEB",
+  "interest.2": "DISEÑO IU",
+  "interest.3": "BASE DE DATOS",
+  "interest.4": "APRENDIZAJE",
 
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",

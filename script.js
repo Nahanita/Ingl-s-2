@@ -38,10 +38,10 @@ const ES = {
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
-  "interest.1": "DESARROLLO WEB",
-  "interest.2": "DISEÑO IU",
-  "interest.3": "BASE DE DATOS",
-  "interest.4": "APRENDIZAJE",
+  "interest.1": " ",
+  "interest.2": " ",
+  "interest.3": " ",
+  "interest.4": " ",
 
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",

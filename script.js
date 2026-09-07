@@ -56,12 +56,12 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "",
+  "edu.1.text":  " ",
   
-  "edu.2.text":  "",
+  "edu.2.text":  " ",
 
-  "exp.1.title": "[Rol o tipo de proyecto]",
-  "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "exp.1.title": " ",
+  "exp.1.text":  " ",
   "exp.2.title": "[Rol o tipo de proyecto]",
   "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
 

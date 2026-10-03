@@ -171,27 +171,25 @@ function aplicarIdioma(idioma) {
   idiomaActual = idioma;
 }
 
-function cambiarIdioma() {
+// Hacer la función global para que el onclick="" del HTML la reconozca siempre
+window.cambiarIdioma = function() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
-}
+};
 
-
-/* ============================================================
-   4. RESPONSIVE MENU
-   ============================================================ */
-
-let menuVisible = false;
-
-function mostrarOcultarMenu() {
+// Hacer también las funciones del menú globales por si acaso
+window.mostrarOcultarMenu = function() {
   const nav = document.getElementById("nav");
-  menuVisible = !menuVisible;
-  nav.className = menuVisible ? "responsive" : "";
-}
+  if (nav) {
+    nav.classList.toggle("responsive");
+  }
+};
 
-function cerrarMenu() {
-  document.getElementById("nav").className = "";
-  menuVisible = false;
-}
+window.cerrarMenu = function() {
+  const nav = document.getElementById("nav");
+  if (nav) {
+    nav.classList.remove("responsive");
+  }
+};
 
 
 /* ============================================================
@@ -233,9 +231,4 @@ function animarHabilidades() {
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();
-
-  const botonIdioma = document.getElementById("btn-idioma");
-  if (botonIdioma) {
-    botonIdioma.addEventListener("click", cambiarIdioma);
-  }
 });

@@ -1,7 +1,15 @@
-
 /* ============================================================
    WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
+
+   THIS IS THE FILE YOU WILL WORK ON THE MOST.
+
+   Below there are two dictionaries: ES and EN.
+   They have exactly the same keys, but different texts.
+
+   IMPORTANT: the English version is NOT a translation of the
+   Spanish version. A professional profile in English follows
+   different rules. Read NOTES.md before you write it.
    ============================================================ */
 
 
@@ -67,6 +75,7 @@ const ES = {
   "contact.title":         "Contacto",
   "contact.intro":         "[¿Tienes un proyecto o una vacante? Escríbeme.]",
   "contact.emailLabel":    "Correo",
+ 
 
   "footer.note": "[Sara Nahany Marrugo Aroca] · Técnico Profesional en Programación Web · UniEspinal"
 };
@@ -74,8 +83,14 @@ const ES = {
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
-   ------------------------------------------------------------ */
 
+   Before writing this section, remember:
+   - Use action verbs: built, configured, fixed, tested, supported.
+   - Do not include age, marital status or a home address.
+   - Do not translate word by word. Rewrite.
+   ------------------------------------------------------------ */
+const EN = {
+ ```javascript
 const EN = {
   "nav.home":      "HOME",
   "nav.about":     "ABOUT ME",
@@ -139,94 +154,49 @@ const EN = {
 
   "footer.note": "Sara Nahany Marrugo Aroca · Professional Technician in Web Programming · UniEspinal"
 };
+```
 
-
-  
 
 
 /* ============================================================
    3. LANGUAGE SWITCHER
+   You do not need to change the code below.
    ============================================================ */
 
-const DICCIONARIOS = {
-  es: ES,
-  en: EN
-};
-
+const DICCIONARIOS = { es: ES, en: EN };
 let idiomaActual = "es";
 
-
 function aplicarIdioma(idioma) {
-
   const textos = DICCIONARIOS[idioma];
+  if (!textos) return;
 
-  if (!textos) {
-    console.error("Idioma no encontrado:", idioma);
-    return;
-  }
-
-  // Cambiar todos los textos que tengan data-i18n
-  const elementos = document.querySelectorAll("[data-i18n]");
-
-  elementos.forEach(elemento => {
-
+  document.querySelectorAll("[data-i18n]").forEach(elemento => {
     const clave = elemento.getAttribute("data-i18n");
-
-    if (Object.prototype.hasOwnProperty.call(textos, clave)) {
+    if (textos[clave] !== undefined) {
       elemento.textContent = textos[clave];
     } else {
       console.warn("Missing translation key:", clave);
     }
-
   });
 
-
-  // Cambiar el idioma del documento
   document.documentElement.lang = idioma;
 
-
-  // Actualizar el botón ES / EN
   const boton = document.getElementById("btn-idioma");
-
   if (boton) {
-
     const otro = idioma === "es" ? "en" : "es";
-
     boton.innerHTML =
-      '<span class="idioma-activo">' +
-      idioma.toUpperCase() +
-      '</span>' +
+      '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
       '<span class="idioma-sep">/</span>' +
-      '<span class="idioma-inactivo">' +
-      otro.toUpperCase() +
-      '</span>';
-
-    boton.setAttribute(
-      "aria-label",
-      idioma === "es"
-        ? "Switch to English"
-        : "Cambiar a español"
-    );
+      '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
+    boton.setAttribute("aria-label",
+      idioma === "es" ? "Switch to English" : "Cambiar a español");
   }
 
-
-  // Guardar idioma actual
   idiomaActual = idioma;
 }
 
-
-/* ------------------------------------------------------------
-   CHANGE LANGUAGE
-   ------------------------------------------------------------ */
-
 function cambiarIdioma() {
-
-  if (idiomaActual === "es") {
-    aplicarIdioma("en");
-  } else {
-    aplicarIdioma("es");
-  }
-
+  aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
 
@@ -237,79 +207,50 @@ function cambiarIdioma() {
 let menuVisible = false;
 
 function mostrarOcultarMenu() {
-
   const nav = document.getElementById("nav");
-
   menuVisible = !menuVisible;
-
   nav.className = menuVisible ? "responsive" : "";
 }
 
-
 function cerrarMenu() {
-
   document.getElementById("nav").className = "";
-
   menuVisible = false;
 }
 
 
 /* ============================================================
    5. SKILL BARS
+
+   The width comes from the data-percent attribute in index.html.
+   You can add or remove skills freely: this code does not depend
+   on how many there are.
    ============================================================ */
 
 function animarHabilidades() {
-
   const barras = document.querySelectorAll(".progreso");
 
   const mostrar = barra => {
-
-    const porcentaje =
-      barra.getAttribute("data-percent") || "0";
-
+    const porcentaje = barra.getAttribute("data-percent") || "0";
     barra.style.width = porcentaje + "%";
-
     const etiqueta = barra.querySelector("span");
-
-    if (etiqueta) {
-      etiqueta.textContent = porcentaje + "%";
-    }
+    if (etiqueta) etiqueta.textContent = porcentaje + "%";
   };
 
-
   if (!("IntersectionObserver" in window)) {
-
     barras.forEach(mostrar);
-
     return;
   }
 
+  const observador = new IntersectionObserver((entradas, obs) => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        mostrar(entrada.target);
+        obs.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.4 });
 
-  const observador = new IntersectionObserver(
-    (entradas, obs) => {
-
-      entradas.forEach(entrada => {
-
-        if (entrada.isIntersecting) {
-
-          mostrar(entrada.target);
-
-          obs.unobserve(entrada.target);
-        }
-
-      });
-
-    },
-    {
-      threshold: 0.4
-    }
-  );
-
-
-  barras.forEach(barra => {
-    observador.observe(barra);
-  });
-
+  barras.forEach(barra => observador.observe(barra));
 }
 
 
@@ -318,20 +259,6 @@ function animarHabilidades() {
    ============================================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
-
   aplicarIdioma("es");
-
   animarHabilidades();
-
-
-  // Conectar el botón de idioma también mediante JavaScript
-  const botonIdioma = document.getElementById("btn-idioma");
-
-  if (botonIdioma) {
-
-    botonIdioma.addEventListener("click", cambiarIdioma);
-
-  }
-
 });
-

@@ -9,7 +9,7 @@
 const ES = {
   "nav.home":      "INICIO",
   "nav.about":     "SOBRE MÍ",
-  "nav.skills":    "HABILIDADES",
+  "nav.skills":    "SKILLS",
   "nav.resume":    "FORMACIÓN",
   "nav.portfolio": "PROYECTOS",
   "nav.contact":   "CONTACTO",
@@ -28,10 +28,10 @@ const ES = {
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
-  "interest.1": "CÓDIGO",
-  "interest.2": "SOPORTE",
-  "interest.3": "LECTURA",
-  "interest.4": "VIDEOJUEGOS",
+  "interest.1": "DESARROLLO WEB",
+  "interest.2": "DISEÑO UI",
+  "interest.3": "BASES DE DATOS",
+  "interest.4": "NUEVAS HERRAMIENTAS",
 
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",
@@ -51,7 +51,7 @@ const ES = {
   "exp.1.title": "NarrArt",
   "exp.1.text":  "Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcasts, leer libros, además de escuchar canciones mientras lees.",
   "exp.2.title": "Calculadora",
-  "exp.2.text":  "Una calculadora simple desarrollada con JavaScript utilizando Eclipse.",
+  "exp.2.text":  "Una calculadora simple con JavaScript desarrollada utilizando el entorno Eclipse.",
 
   "portfolio.title": "Proyectos",
   "project.1.title": "NarrArt",
@@ -64,6 +64,7 @@ const ES = {
   "contact.title":         "Contacto",
   "contact.intro":         "¿Tienes un proyecto o una vacante? Escríbeme.",
   "contact.emailLabel":    "Correo",
+  "contact.linkedinValue": "Perfil profesional",
 
   "footer.note": "Sara Nahany Marrugo Aroca · Técnico Profesional en Programación Web · UniEspinal"
 };
@@ -94,10 +95,10 @@ const EN = {
   "about.valueStatus":    "Open to internships",
   "about.interestsTitle": "Interests",
 
-  "interest.1": "CODE",
-  "interest.2": "SUPPORT",
-  "interest.3": "READING",
-  "interest.4": "GAMING",
+  "interest.1": "WEB DEVELOPMENT",
+  "interest.2": "UI DESIGN",
+  "interest.3": "DATABASES",
+  "interest.4": "NEW TOOLS",
 
   "skills.title":        "Skills",
   "skills.technical":    "Technical skills",
@@ -130,6 +131,7 @@ const EN = {
   "contact.title":         "Contact",
   "contact.intro":         "Do you have a project or an open position? Send me a message.",
   "contact.emailLabel":    "Email",
+  "contact.linkedinValue": "Professional Profile",
 
   "footer.note": "Sara Nahany Marrugo Aroca · Professional Technician in Web Programming · UniEspinal"
 };
@@ -150,8 +152,6 @@ function aplicarIdioma(idioma) {
     const clave = elemento.getAttribute("data-i18n");
     if (textos[clave] !== undefined) {
       elemento.textContent = textos[clave];
-    } else {
-      console.warn("Missing translation key:", clave);
     }
   });
 

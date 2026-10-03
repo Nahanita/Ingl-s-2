@@ -84,7 +84,7 @@ const EN = {
   "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "Systems Engineering student at UniEspinal and Professional Technician in Web Programming. Passionate about building functional, intuitive, and engaging web platforms.",
+  "about.text":           "Currently, I am a Systems Engineering student at UniEspinal and a Professional Technician in Web Programming. I am passionate about building web platforms, focusing on functional, intuitive, and visually engaging solutions. I consider myself a curious person, committed to continuous learning and strengthening my software engineering and programming skills.",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
   "about.valueLocation":  "Espinal, Tolima, Colombia",

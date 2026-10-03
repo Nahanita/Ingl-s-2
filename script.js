@@ -47,17 +47,15 @@ const ES = {
 
   "edu.1.title": "Técnico Profesional en Programación Web",
   "edu.1.text":  "Formación en desarrollo y programación web, con conocimientos en HTML, CSS, JavaScript, Java, PHP y Laravel. Desarrollo habilidades en diseño de interfaces, bases de datos, lógica de programación y construcción de aplicaciones web.",
-  "edu.2.title": "Cursos y Certificaciones",
-  "edu.2.text":  "Formación continua en herramientas y tecnologías de desarrollo web.",
 
   "exp.1.title": "NarrArt",
-  "exp.1.text":  "Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcasts, leer libros y escuchar música mientras lees.",
-  "exp.2.title": "Calculadora JavaScript",
-  "exp.2.text":  "Una calculadora simple desarrollada con JavaScript en el entorno Eclipse.",
+  "exp.1.text":  "Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcasts, leer libros, además de escuchar canciones mientras lees.",
+  "exp.2.title": "Calculadora",
+  "exp.2.text":  "Una calculadora simple desarrollada con JavaScript utilizando Eclipse.",
 
   "portfolio.title": "Proyectos",
   "project.1.title": "NarrArt",
-  "project.1.text":  "HTML5, CSS, JavaScript",
+  "project.1.text":  "HTML5, CSS, JAVASCRIPT",
   "project.2.title": "Calculadora",
   "project.2.text":  "JavaScript, CSS",
   "project.3.title": "RutaSafe",
@@ -69,6 +67,7 @@ const ES = {
 
   "footer.note": "Sara Nahany Marrugo Aroca · Técnico Profesional en Programación Web · UniEspinal"
 };
+
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
@@ -84,7 +83,7 @@ const EN = {
   "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "Systems Engineering student and Professional Technician in Web Programming. Passionate about building functional, intuitive, and visually appealing web platforms.",
+  "about.text":           "Currently, I am a Systems Engineering student at UniEspinal and a Professional Technician in Web Programming. I am passionate about creating web platforms, especially developing functional, intuitive, and visually appealing solutions. I consider myself a curious and committed person, dedicated to continuous learning and strengthening my skills in programming and software development.",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
   "about.valueLocation":  "Espinal, Colombia",
@@ -113,29 +112,28 @@ const EN = {
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "Focused on web development using HTML, CSS, JavaScript, Java, PHP, and Laravel.",
-  "edu.2.title": "Courses & Certifications",
-  "edu.2.text":  "Continuous training in modern web technologies and software development.",
+  "edu.1.text":  "Trained in web development and programming, with knowledge in HTML, CSS, JavaScript, Java, PHP, and Laravel. Skilled in UI design, databases, programming logic, and building web applications.",
 
-  "exp.1.title": "NarrArt Project",
-  "exp.1.text":  "Designed a landing page for the NarrArt app, featuring podcasts, books, and interactive media features.",
-  "exp.2.title": "Calculator App",
-  "exp.2.text":  "Built a JavaScript calculator application applying basic programming logic and UI design.",
+  "exp.1.title": "NarrArt",
+  "exp.1.text":  "Designed and built a website showcasing the NarrArt app, which allows users to listen to and create podcasts, read books, and listen to music while reading.",
+  "exp.2.title": "Calculator",
+  "exp.2.text":  "Built a simple web calculator applying JavaScript programming logic within the Eclipse IDE environment.",
 
   "portfolio.title": "Projects",
   "project.1.title": "NarrArt",
-  "project.1.text":  "HTML5, CSS, JavaScript",
+  "project.1.text":  "HTML5, CSS, JAVASCRIPT",
   "project.2.title": "Calculator",
   "project.2.text":  "JavaScript, CSS",
   "project.3.title": "RutaSafe",
   "project.3.text":  "Laravel 11, Leaflet, CSS",
 
   "contact.title":         "Contact",
-  "contact.intro":         "Have a project or a position available? Send me a message.",
+  "contact.intro":         "Do you have a project or an open position? Send me a message.",
   "contact.emailLabel":    "Email",
 
   "footer.note": "Sara Nahany Marrugo Aroca · Professional Technician in Web Programming · UniEspinal"
 };
+
 
 /* ============================================================
    3. LANGUAGE SWITCHER
@@ -177,6 +175,7 @@ function cambiarIdioma() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
+
 /* ============================================================
    4. RESPONSIVE MENU
    ============================================================ */
@@ -193,6 +192,7 @@ function cerrarMenu() {
   document.getElementById("nav").className = "";
   menuVisible = false;
 }
+
 
 /* ============================================================
    5. SKILL BARS
@@ -224,6 +224,7 @@ function animarHabilidades() {
 
   barras.forEach(barra => observador.observe(barra));
 }
+
 
 /* ============================================================
    6. START

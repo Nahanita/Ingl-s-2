@@ -1,4 +1,4 @@
-```javascript
+
 /* ============================================================
    WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
@@ -334,4 +334,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-```
+

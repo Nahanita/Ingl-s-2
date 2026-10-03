@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<!--
-  ============================================================
-  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
-  Institución Universitaria de El Espinal - UniEspinal
-  Inglés I / Inglés II
-  ============================================================
-
-  HOW TO USE THIS FILE
-  1. Replace every text inside [square brackets] with your own information.
-  2. Every visible text has a data-i18n attribute. The actual words live in
-     script.js, inside the ES and EN dictionaries. Edit them there.
-  3. Do NOT delete the data-i18n attributes. They connect this file to the
-     language switcher.
-  4. Never add your home address, your phone number or your ID number.
-     A public profile does not need them.
-  ============================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- [Replace with your name] -->
-  <title>[Portafolio] · Web Developer</title>
-  <meta name="description" content="[One short line about you. Example: Junior web developer and technical support technician based in Colombia.]">
+  <title>Sara Nahany · Portafolio</title>
+  <meta name="description" content="Técnico Profesional en Programación Web y estudiante de Ingeniería de Sistemas.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +19,6 @@
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        <!-- [Replace with your name or a short nickname] -->
         <a href="#inicio">Sara Nahany</a>
       </div>
 
@@ -73,18 +54,14 @@
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
         <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
       </div>
 
-      <!-- [Replace with your full name] -->
       <h1>Sara Nahany Marrugo Aroca</h1>
       <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
 
       <div class="redes">
-        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
-        
-        <a href="mailto:[smarrugo02@itfip.edu.co]" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:smarrugo02@itfip.edu.co" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
   </section>
@@ -94,17 +71,11 @@
     <div class="contenido-seccion">
       <h2 data-i18n="about.title">Sobre Mí</h2>
 
-      <p data-i18n="about.text">
-       Actualmente, soy estudiante de ingeniería de sistemas en la UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones que sean funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa, curiosa y comrpometida con seguir aprendiendo y fortaleciendo mis conocimientos en programación y desarrollo de software.
-      </p>
+      <p data-i18n="about.text"></p>
 
       <div class="fila">
         <div class="col">
           <h3 data-i18n="about.infoTitle">Información</h3>
-          <!--
-            SAFE FIELDS ONLY.
-            Do not add: home address, phone number, ID number, date of birth.
-          -->
           <ul class="datos">
             <li>
               <strong data-i18n="about.labelLocation">Ubicación</strong>
@@ -120,7 +91,7 @@
             </li>
             <li>
               <strong data-i18n="about.labelStatus">Disponibilidad</strong>
-              <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
+              <span class="destacado" data-i18n="about.valueStatus"></span>
             </li>
           </ul>
         </div>
@@ -128,22 +99,21 @@
         <div class="col">
           <h3 data-i18n="about.interestsTitle">Intereses</h3>
           <div class="contenedor-intereses">
-            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
               <i class="fa-solid fa-code"></i>
-              <span data-i18n="interest.1">DESARROLLO WEB</span>
+              <span data-i18n="interest.1"></span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-headset"></i>
-              <span data-i18n="interest.2">DISEÑO UI</span>
+              <span data-i18n="interest.2"></span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-book-open"></i>
-              <span data-i18n="interest.3">BASE DE DATOS</span>
+              <span data-i18n="interest.3"></span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-gamepad"></i>
-              <span data-i18n="interest.4">APRENDIZAJE EN NUEVAS HERAAMIENTAS</span>
+              <span data-i18n="interest.4"></span>
             </div>
           </div>
         </div>
@@ -152,11 +122,6 @@
   </section>
 
   <!-- ========================= SKILLS ========================= -->
-  <!--
-    To change a skill: edit the label, and edit data-percent.
-    The bar width and the number are both taken from data-percent,
-    so you only change it in ONE place.
-  -->
   <section id="skills" class="skills">
     <div class="contenido-seccion">
       <h2 data-i18n="skills.title">Habilidades</h2>
@@ -187,19 +152,19 @@
           <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
 
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
+            <span class="skill-nombre" data-i18n="skill.support"></span>
             <div class="barra-skill"><div class="progreso" data-percent="80"><span>80%</span></div></div>
           </div>
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
+            <span class="skill-nombre" data-i18n="skill.teamwork"></span>
             <div class="barra-skill"><div class="progreso" data-percent="85"><span>85%</span></div></div>
           </div>
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
+            <span class="skill-nombre" data-i18n="skill.problem"></span>
             <div class="barra-skill"><div class="progreso" data-percent="75"><span>75%</span></div></div>
           </div>
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
+            <span class="skill-nombre" data-i18n="skill.english"></span>
             <div class="barra-skill"><div class="progreso" data-percent="65"><span>65%</span></div></div>
           </div>
         </div>
@@ -218,46 +183,29 @@
           <h3 data-i18n="resume.education">Formación</h3>
 
           <div class="item izq">
-            <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
+            <h4 data-i18n="edu.1.title"></h4>
             <span class="casa">UniEspinal</span>
-            <span class="fecha">[2025 - 2027]</span>
+            <span class="fecha">2025 - 2027</span>
             <p data-i18n="edu.1.text"></p> 
           </div>
-
-          <div class="item izq">
-            <h4 data-i18n="edu.2.title"></h4>
-            <span class="casa"></span>
-            <span class="fecha"></span>
-            <p data-i18n="edu.2.text"></p>
-            
-          </div>
         </div>
-
-          
 
         <!-- EXPERIENCE -->
         <div class="col derecha">
           <h3 data-i18n="resume.experience">Experiencia</h3>
 
-          <!--
-            No work experience yet? That is normal.
-            Use academic projects, volunteer work or freelance jobs.
-            Describe what you DID, using action verbs: built, configured, fixed, tested.
-          -->
           <div class="item der">
             <h4 data-i18n="exp.1.title"></h4>
-            <span class="casa">Proyecto propio</span>
+            <span class="casa">Proyecto académico</span>
             <span class="fecha">2026</span>
             <p data-i18n="exp.1.text"></p>
-            
           </div>
 
           <div class="item der">
             <h4 data-i18n="exp.2.title"></h4>
-            <span class="casa"></span>
-            <span class="fecha"></span>
+            <span class="casa">Proyecto académico</span>
+            <span class="fecha">2026</span>
             <p data-i18n="exp.2.text"></p>
-            
           </div>
         </div>
       </div>
@@ -265,11 +213,6 @@
   </section>
 
   <!-- ========================= PORTFOLIO ========================= -->
-  <!--
-    This is the most important section for a junior developer.
-    Three finished small projects are better than ten unfinished ones.
-    Every card should link to the live project or to its repository.
-  -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
       <h2 data-i18n="portfolio.title">Proyectos</h2>
@@ -303,34 +246,22 @@
   </section>
 
   <!-- ========================= CONTACT ========================= -->
-  <!--
-    A contact form needs a server to work. This template uses direct links
-    instead, so nothing here is decorative: every button really does something.
-  -->
   <section id="contacto" class="contacto">
     <div class="contenido-seccion">
       <h2 data-i18n="contact.title">Contacto</h2>
-      <p class="contacto-intro" data-i18n="contact.intro">
-        [Una frase invitando a escribirte.]
-      </p>
+      <p class="contacto-intro" data-i18n="contact.intro"></p>
 
       <div class="tarjetas-contacto">
-        <a class="tarjeta" href="mailto:[your.email@example.com]">
+        <a class="tarjeta" href="mailto:smarrugo02@itfip.edu.co">
           <i class="fa-solid fa-envelope"></i>
           <strong data-i18n="contact.emailLabel">Correo</strong>
           <span>smarrugo02@itfip.edu.co</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+        <a class="tarjeta" href="https://github.com/Nahanita" target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
           <strong>GitHub</strong>
           <span>github.com/Nahanita</span>
-        </a>
-
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <strong></strong>
-          <span data-i18n="contact.linkedinValue"></span>
         </a>
       </div>
     </div>
@@ -341,9 +272,7 @@
     <a href="#inicio" class="arriba" aria-label="Back to top">
       <i class="fa-solid fa-angles-up"></i>
     </a>
-    <p class="footer-nota" data-i18n="footer.note">
-      Sara Nahany Marrugo Aroca· Técnico Profesional en Programación Web · UniEspinal
-    </p>
+    <p class="footer-nota" data-i18n="footer.note"></p>
   </footer>
 
   <script src="script.js"></script>

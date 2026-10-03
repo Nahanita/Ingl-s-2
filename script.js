@@ -17,7 +17,7 @@ const ES = {
   "hero.role": "Desarrolladora Web · Soporte Técnico",
 
   "about.title":          "Sobre Mí",
-  "about.text":           "Actualmente, soy estudiante de Ingeniería de Sistemas en UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa y comprometida con el aprendizaje continuo y el fortalecimiento de mis habilidades en desarrollo de software.",
+  "about.text":           "Actualmente, soy estudiante de Ingeniería de Sistemas en UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa y comprometida con el aprendizaje continuo y el fortalecimiento de mis conocimientos en programación y desarrollo de software.",
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
   "about.valueLocation":  "Espinal, Tolima, Colombia",
@@ -171,24 +171,23 @@ function aplicarIdioma(idioma) {
   idiomaActual = idioma;
 }
 
-// Hacer la función global para que el onclick="" del HTML la reconozca siempre
 window.cambiarIdioma = function() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 };
 
-// Hacer también las funciones del menú globales por si acaso
+
+/* ============================================================
+   4. RESPONSIVE MENU
+   ============================================================ */
+
 window.mostrarOcultarMenu = function() {
   const nav = document.getElementById("nav");
-  if (nav) {
-    nav.classList.toggle("responsive");
-  }
+  if (nav) nav.classList.toggle("responsive");
 };
 
 window.cerrarMenu = function() {
   const nav = document.getElementById("nav");
-  if (nav) {
-    nav.classList.remove("responsive");
-  }
+  if (nav) nav.classList.remove("responsive");
 };
 
 

@@ -1,3 +1,5 @@
+
+
 /* ============================================================
    WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
@@ -90,72 +92,69 @@ const ES = {
    - Do not translate word by word. Rewrite.
    ------------------------------------------------------------ */
 const EN = {
- ```javascript
-const EN = {
   "nav.home":      "HOME",
-  "nav.about":     "ABOUT ME",
+  "nav.about":     "ABOUT",
   "nav.skills":    "SKILLS",
-  "nav.resume":    "EDUCATION",
+  "nav.resume":    "RESUME",
   "nav.portfolio": "PROJECTS",
   "nav.contact":   "CONTACT",
 
   "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "Currently, I am a Systems Engineering student at UniEspinal and a Professional Technician in Web Programming. I am passionate about creating web platforms, especially developing solutions that are functional, intuitive, and visually appealing. I consider myself a curious and committed person who is constantly learning and strengthening my knowledge of programming and software development.",
+  "about.text":           "[Write two or three sentences about yourself: what you study, what interests you in web development, and what you are looking for now.]",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
-  "about.valueLocation": "[Espinal], Colombia",
+  "about.valueLocation":  "[City], Colombia",
   "about.labelEmail":     "Email",
   "about.labelLanguages": "Languages",
-  "about.valueLanguages": "Spanish (native) · English (B1)",
+  "about.valueLanguages": "Spanish (native) · English ([your level])",
   "about.labelStatus":    "Availability",
   "about.valueStatus":    "Open to internships",
   "about.interestsTitle": "Interests",
 
-  "interest.1": " ",
-  "interest.2": " ",
-  "interest.3": " ",
-  "interest.4": " ",
+  "interest.1": "CODE",
+  "interest.2": "SUPPORT",
+  "interest.3": "READING",
+  "interest.4": "GAMING",
 
   "skills.title":        "Skills",
-  "skills.technical":    "Technical Skills",
-  "skills.professional": "Professional Skills",
-  "skill.support":       "User Support",
+  "skills.technical":    "Technical skills",
+  "skills.professional": "Professional skills",
+  "skill.support":       "User support",
   "skill.teamwork":      "Teamwork",
-  "skill.problem":       "Problem Solving",
+  "skill.problem":       "Problem solving",
   "skill.english":       "Technical English",
 
-  "resume.title":      "Education and Experience",
+  "resume.title":      "Education and experience",
   "resume.education":  "Education",
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "Training in web development and programming, with knowledge of HTML, CSS, JavaScript, Java, PHP, and Laravel. I develop skills in interface design, databases, programming logic, and web application development.",
-  "edu.2.text":  " ",
+  "edu.1.text":  "[One or two sentences about what you are learning and what you can do now.]",
+  "edu.2.title": "[Course or certificate]",
+  "edu.2.text":  "[What you learned and how you use it.]",
 
-  "exp.1.title": "[NarrArt]",
-  "exp.1.text":  "A website created to showcase the NarrArt app, which allows users to listen to and create podcasts, read books, and listen to songs while reading.",
-  "exp.2.title": "[Calculator]",
-  "exp.2.text":  "A simple calculator developed with JavaScript using Eclipse.",
+  "exp.1.title": "",
+  "exp.1.text":  "",
+  "exp.2.title": "[Role or type of project]",
+  "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
 
   "portfolio.title": "Projects",
-  "project.1.title": "[NarrArt]",
-  "project.1.text":  "[HTML5, CSS, JAVASCRIPT]",
-  "project.2.title": "[Calculator]",
-  "project.2.text":  "[JavaScript, CSS]",
-  "project.3.title": "[RutaSafe]",
-  "project.3.text":  "[Laravel 11, Leaflet, CSS]",
+  "project.1.title": "[Project name]",
+  "project.1.text":  "[Technologies used]",
+  "project.2.title": "[Project name]",
+  "project.2.text":  "[Technologies used]",
+  "project.3.title": "[Project name]",
+  "project.3.text":  "[Technologies used]",
 
   "contact.title":         "Contact",
-  "contact.intro":         "Do you have a project or a job opportunity? Feel free to contact me.",
+  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
   "contact.emailLabel":    "Email",
   "contact.linkedinValue": "[Your professional profile]",
 
-  "footer.note": "Sara Nahany Marrugo Aroca · Professional Technician in Web Programming · UniEspinal"
+  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
 };
-```
-
 
 
 /* ============================================================

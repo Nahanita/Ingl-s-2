@@ -17,7 +17,7 @@ const ES = {
   "hero.role": "Desarrolladora Web · Soporte Técnico",
 
   "about.title":          "Sobre Mí",
-  "about.text":           "Actualmente, soy estudiante de Ingeniería de Sistemas en UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa y comprometida con el aprendizaje continuo y el fortalecimiento de mis conocimientos en programación y desarrollo de software.",
+  "about.text":           "Estudiante de Ingeniería de Sistemas en UniEspinal y Técnica Profesional en Programación Web. Apasionada por el desarrollo de plataformas web funcionales, intuitivas y atractivas, comprometida con el aprendizaje continuo en desarrollo de software.",
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
   "about.valueLocation":  "Espinal, Tolima, Colombia",
@@ -46,12 +46,12 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "Formación enfocada en el desarrollo de software web con tecnologías como HTML, CSS, JavaScript, Java, PHP y Laravel. Competencias en diseño de interfaces, gestión de bases de datos y lógica de programación.",
+  "edu.1.text":  "Formación en desarrollo web con HTML, CSS, JavaScript, Java, PHP y Laravel. Competencias en diseño de interfaces y gestión de bases de datos.",
 
   "exp.1.title": "NarrArt - Plataforma Web",
-  "exp.1.text":  "Desarrollo de sitio web promocional para la aplicación NarrArt, integrando funcionalidades para la lectura de libros, reproducción de música y gestión de podcasts.",
+  "exp.1.text":  "Desarrollo de sitio web para la aplicación NarrArt, integrando lectura de libros, música y podcasts.",
   "exp.2.title": "Calculadora Web",
-  "exp.2.text":  "Construcción de una aplicación de calculadora lógica e interactiva utilizando JavaScript y el entorno de desarrollo Eclipse.",
+  "exp.2.text":  "Construcción de una aplicación de calculadora interactiva utilizando JavaScript en Eclipse.",
 
   "portfolio.title": "Proyectos",
   "project.1.title": "NarrArt",
@@ -84,7 +84,7 @@ const EN = {
   "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "I am a Systems Engineering student at UniEspinal and a Professional Technician in Web Programming. Passionate about building web platforms, focusing on functional, intuitive, and engaging user experiences. Fast learner and committed to strengthening software engineering practices.",
+  "about.text":           "Systems Engineering student at UniEspinal and Professional Technician in Web Programming. Passionate about building functional, intuitive, and engaging web platforms.",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
   "about.valueLocation":  "Espinal, Tolima, Colombia",
@@ -113,12 +113,12 @@ const EN = {
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "Practical training in web application development covering HTML, CSS, JavaScript, Java, PHP, and Laravel. Strong foundation in interface design, database management, and business logic.",
+  "edu.1.text":  "Practical training in web development covering HTML, CSS, JavaScript, Java, PHP, and Laravel.",
 
   "exp.1.title": "NarrArt Web Platform",
-  "exp.1.text":  "Designed and deployed a promotional web platform for NarrArt, enabling podcast creation, book reading, and integrated background audio playback.",
+  "exp.1.text":  "Designed and deployed a promotional web platform for NarrArt, enabling podcast creation and audio playback.",
   "exp.2.title": "Web Calculator App",
-  "exp.2.text":  "Engineered an interactive web calculator using vanilla JavaScript algorithms developed inside the Eclipse IDE environment.",
+  "exp.2.text":  "Engineered an interactive web calculator using vanilla JavaScript developed inside the Eclipse IDE environment.",
 
   "portfolio.title": "Projects",
   "project.1.title": "NarrArt",
@@ -137,10 +137,9 @@ const EN = {
 };
 
 
-/* ============================================================
+/* ------------------------------------------------------------
    3. LANGUAGE SWITCHER
-   ============================================================ */
-
+   ------------------------------------------------------------ */
 const DICCIONARIOS = { es: ES, en: EN };
 let idiomaActual = "es";
 
@@ -148,61 +147,43 @@ function aplicarIdioma(idioma) {
   const textos = DICCIONARIOS[idioma];
   if (!textos) return;
 
-  document.querySelectorAll("[data-i18n]").forEach(elemento => {
-    const clave = elemento.getAttribute("data-i18n");
-    if (textos[clave] !== undefined) {
-      elemento.textContent = textos[clave];
-    }
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const clave = el.getAttribute("data-i18n");
+    if (textos[clave] !== undefined) el.textContent = textos[clave];
   });
 
   document.documentElement.lang = idioma;
 
   const boton = document.getElementById("btn-idioma");
   if (boton) {
-    const otro = idioma === "es" ? "en" : "es";
-    boton.innerHTML =
-      '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
-      '<span class="idioma-sep">/</span>' +
-      '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
-    boton.setAttribute("aria-label",
-      idioma === "es" ? "Switch to English" : "Cambiar a español");
+    const otro = idioma === "es" ? "EN" : "ES";
+    boton.innerHTML = `<span class="idioma-activo">${idioma.toUpperCase()}</span><span class="idioma-sep">/</span><span class="idioma-inactivo">${otro}</span>`;
   }
 
   idiomaActual = idioma;
 }
 
-window.cambiarIdioma = function() {
-  aplicarIdioma(idiomaActual === "es" ? "en" : "es");
-};
+window.cambiarIdioma = () => aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 
 
-/* ============================================================
+/* ------------------------------------------------------------
    4. RESPONSIVE MENU
-   ============================================================ */
-
-window.mostrarOcultarMenu = function() {
-  const nav = document.getElementById("nav");
-  if (nav) nav.classList.toggle("responsive");
-};
-
-window.cerrarMenu = function() {
-  const nav = document.getElementById("nav");
-  if (nav) nav.classList.remove("responsive");
-};
+   ------------------------------------------------------------ */
+window.mostrarOcultarMenu = () => document.getElementById("nav")?.classList.toggle("responsive");
+window.cerrarMenu = () => document.getElementById("nav")?.classList.remove("responsive");
 
 
-/* ============================================================
+/* ------------------------------------------------------------
    5. SKILL BARS
-   ============================================================ */
-
+   ------------------------------------------------------------ */
 function animarHabilidades() {
   const barras = document.querySelectorAll(".progreso");
 
   const mostrar = barra => {
     const porcentaje = barra.getAttribute("data-percent") || "0";
-    barra.style.width = porcentaje + "%";
+    barra.style.width = `${porcentaje}%`;
     const etiqueta = barra.querySelector("span");
-    if (etiqueta) etiqueta.textContent = porcentaje + "%";
+    if (etiqueta) etiqueta.textContent = `${porcentaje}%`;
   };
 
   if (!("IntersectionObserver" in window)) {
@@ -223,10 +204,9 @@ function animarHabilidades() {
 }
 
 
-/* ============================================================
+/* ------------------------------------------------------------
    6. START
-   ============================================================ */
-
+   ------------------------------------------------------------ */
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();

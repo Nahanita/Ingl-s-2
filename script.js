@@ -1,19 +1,7 @@
-
-
 /* ============================================================
    WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
-
-   THIS IS THE FILE YOU WILL WORK ON THE MOST.
-
-   Below there are two dictionaries: ES and EN.
-   They have exactly the same keys, but different texts.
-
-   IMPORTANT: the English version is NOT a translation of the
-   Spanish version. A professional profile in English follows
-   different rules. Read NOTES.md before you write it.
    ============================================================ */
-
 
 /* ------------------------------------------------------------
    1. SPANISH TEXTS
@@ -29,21 +17,21 @@ const ES = {
   "hero.role": "Desarrollador Web · Soporte Técnico",
 
   "about.title":          "Sobre Mí",
-  "about.text":           "[Actualmente, soy estudiante de ingeniería de sistemas en la UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones que sean funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa, curiosa y comrpometida con seguir aprendiendo y fortaleciendo mis conocimientos en programación y desarrollo de software.]",
+  "about.text":           "Actualmente, soy estudiante de ingeniería de sistemas en la UniEspinal y Técnica Profesional en Programación Web. Me apasiona la creación de plataformas web, especialmente el desarrollo de soluciones que sean funcionales, intuitivas y visualmente atractivas. Me considero una persona curiosa y comprometida con seguir aprendiendo y fortaleciendo mis conocimientos en programación y desarrollo de software.",
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
-  "about.valueLocation":  "[Espinal], Colombia",
+  "about.valueLocation":  "Espinal, Colombia",
   "about.labelEmail":     "Correo",
   "about.labelLanguages": "Idiomas",
-  "about.valueLanguages": "Español (nativo) · Inglés ([B1])",
+  "about.valueLanguages": "Español (nativo) · Inglés (B1)",
   "about.labelStatus":    "Disponibilidad",
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
-  "interest.1": " ",
-  "interest.2": " ",
-  "interest.3": " ",
-  "interest.4": " ",
+  "interest.1": "CÓDIGO",
+  "interest.2": "SOPORTE",
+  "interest.3": "LECTURA",
+  "interest.4": "VIDEOJUEGOS",
 
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",
@@ -58,38 +46,32 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "[Formación en desarrollo y programación web, con conocimientos en HTML, CSS, JavaScript, Java, PHP y Laravel. Desarrollo habilidades en diseño de interfaces, bases de datos, lógica de programación y construcción de aplicaciones web.]",
-  "edu.2.text":  " ",
+  "edu.1.text":  "Formación en desarrollo y programación web, con conocimientos en HTML, CSS, JavaScript, Java, PHP y Laravel. Desarrollo habilidades en diseño de interfaces, bases de datos, lógica de programación y construcción de aplicaciones web.",
+  "edu.2.title": "Cursos y Certificaciones",
+  "edu.2.text":  "Formación continua en herramientas y tecnologías de desarrollo web.",
 
-  "exp.1.title": "[NarrArt]",
-  "exp.1.text":  "[Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcast, leer libros, ademas de escuchar canciones mientras  lees]",
-  "exp.2.title": "[Calculadora]",
-  "exp.2.text":  "[Una calculadora simple, con java script. Usando Eclipse]",
+  "exp.1.title": "NarrArt",
+  "exp.1.text":  "Una página web donde se da a conocer la app NarrArt, que permite escuchar y crear podcasts, leer libros y escuchar música mientras lees.",
+  "exp.2.title": "Calculadora JavaScript",
+  "exp.2.text":  "Una calculadora simple desarrollada con JavaScript en el entorno Eclipse.",
 
   "portfolio.title": "Proyectos",
-  "project.1.title": "[NarrArt]",
-  "project.1.text":  "[HTML5, CSS, JAVASCRIPT]",
-  "project.2.title": "[Calculadora]",
-  "project.2.text":  "[JavaScript, CSS]",
-  "project.3.title": "[RutaSafe]",
-  "project.3.text":  "[Laravel 11, Leaflet, CSS]",
+  "project.1.title": "NarrArt",
+  "project.1.text":  "HTML5, CSS, JavaScript",
+  "project.2.title": "Calculadora",
+  "project.2.text":  "JavaScript, CSS",
+  "project.3.title": "RutaSafe",
+  "project.3.text":  "Laravel 11, Leaflet, CSS",
 
   "contact.title":         "Contacto",
-  "contact.intro":         "[¿Tienes un proyecto o una vacante? Escríbeme.]",
+  "contact.intro":         "¿Tienes un proyecto o una vacante? Escríbeme.",
   "contact.emailLabel":    "Correo",
- 
 
-  "footer.note": "[Sara Nahany Marrugo Aroca] · Técnico Profesional en Programación Web · UniEspinal"
+  "footer.note": "Sara Nahany Marrugo Aroca · Técnico Profesional en Programación Web · UniEspinal"
 };
-
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
-
-   Before writing this section, remember:
-   - Use action verbs: built, configured, fixed, tested, supported.
-   - Do not include age, marital status or a home address.
-   - Do not translate word by word. Rewrite.
    ------------------------------------------------------------ */
 const EN = {
   "nav.home":      "HOME",
@@ -102,13 +84,13 @@ const EN = {
   "hero.role": "Web Developer · Technical Support",
 
   "about.title":          "About Me",
-  "about.text":           "[Write two or three sentences about yourself: what you study, what interests you in web development, and what you are looking for now.]",
+  "about.text":           "Systems Engineering student and Professional Technician in Web Programming. Passionate about building functional, intuitive, and visually appealing web platforms.",
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
-  "about.valueLocation":  "[City], Colombia",
+  "about.valueLocation":  "Espinal, Colombia",
   "about.labelEmail":     "Email",
   "about.labelLanguages": "Languages",
-  "about.valueLanguages": "Spanish (native) · English ([your level])",
+  "about.valueLanguages": "Spanish (native) · English (B1)",
   "about.labelStatus":    "Availability",
   "about.valueStatus":    "Open to internships",
   "about.interestsTitle": "Interests",
@@ -126,40 +108,37 @@ const EN = {
   "skill.problem":       "Problem solving",
   "skill.english":       "Technical English",
 
-  "resume.title":      "Education and experience",
+  "resume.title":      "Education and Experience",
   "resume.education":  "Education",
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "[One or two sentences about what you are learning and what you can do now.]",
-  "edu.2.title": "[Course or certificate]",
-  "edu.2.text":  "[What you learned and how you use it.]",
+  "edu.1.text":  "Focused on web development using HTML, CSS, JavaScript, Java, PHP, and Laravel.",
+  "edu.2.title": "Courses & Certifications",
+  "edu.2.text":  "Continuous training in modern web technologies and software development.",
 
-  "exp.1.title": "",
-  "exp.1.text":  "",
-  "exp.2.title": "[Role or type of project]",
-  "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
+  "exp.1.title": "NarrArt Project",
+  "exp.1.text":  "Designed a landing page for the NarrArt app, featuring podcasts, books, and interactive media features.",
+  "exp.2.title": "Calculator App",
+  "exp.2.text":  "Built a JavaScript calculator application applying basic programming logic and UI design.",
 
   "portfolio.title": "Projects",
-  "project.1.title": "[Project name]",
-  "project.1.text":  "[Technologies used]",
-  "project.2.title": "[Project name]",
-  "project.2.text":  "[Technologies used]",
-  "project.3.title": "[Project name]",
-  "project.3.text":  "[Technologies used]",
+  "project.1.title": "NarrArt",
+  "project.1.text":  "HTML5, CSS, JavaScript",
+  "project.2.title": "Calculator",
+  "project.2.text":  "JavaScript, CSS",
+  "project.3.title": "RutaSafe",
+  "project.3.text":  "Laravel 11, Leaflet, CSS",
 
   "contact.title":         "Contact",
-  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
+  "contact.intro":         "Have a project or a position available? Send me a message.",
   "contact.emailLabel":    "Email",
-  "contact.linkedinValue": "[Your professional profile]",
 
-  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
+  "footer.note": "Sara Nahany Marrugo Aroca · Professional Technician in Web Programming · UniEspinal"
 };
-
 
 /* ============================================================
    3. LANGUAGE SWITCHER
-   You do not need to change the code below.
    ============================================================ */
 
 const DICCIONARIOS = { es: ES, en: EN };
@@ -198,7 +177,6 @@ function cambiarIdioma() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
-
 /* ============================================================
    4. RESPONSIVE MENU
    ============================================================ */
@@ -216,13 +194,8 @@ function cerrarMenu() {
   menuVisible = false;
 }
 
-
 /* ============================================================
    5. SKILL BARS
-
-   The width comes from the data-percent attribute in index.html.
-   You can add or remove skills freely: this code does not depend
-   on how many there are.
    ============================================================ */
 
 function animarHabilidades() {
@@ -252,7 +225,6 @@ function animarHabilidades() {
   barras.forEach(barra => observador.observe(barra));
 }
 
-
 /* ============================================================
    6. START
    ============================================================ */
@@ -260,4 +232,9 @@ function animarHabilidades() {
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();
+
+  const botonIdioma = document.getElementById("btn-idioma");
+  if (botonIdioma) {
+    botonIdioma.addEventListener("click", cambiarIdioma);
+  }
 });

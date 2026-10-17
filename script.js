@@ -51,7 +51,7 @@ const ES = {
   "exp.1.title": "Matrices",
   "exp.1.text":  "Desarrollo de sitio web para la plataforma web en donde se crean matrices.",
   "exp.2.title": "Calculadora geometrica",
-  "exp.2.text":  "Construcción de una aplicación de calculadora interactiva para realizar operaciones de figuras gemotricas como encontrar el área, el volumen y el perimetro.",
+  "exp.2.text":  "Construcción de una aplicación de calculadora interactiva para realizar operaciones de figuras geometricas como encontrar el área, el volumen y el perimetro.",
 
 
  
@@ -124,10 +124,13 @@ const EN = {
   "edu.1.title": "Professional Technician in Web Programming",
   "edu.1.text":  "Practical training in web development covering HTML, CSS, JavaScript, Java, PHP, and Laravel.",
 
-  "exp.1.title": "NarrArt Web Platform",
-  "exp.1.text":  "Designed and deployed a promotional web platform for NarrArt, enabling podcast creation and audio playback.",
-  "exp.2.title": "Web Calculator App",
-  "exp.2.text":  "Engineered an interactive web calculator using vanilla JavaScript developed inside the Eclipse IDE environment.",
+  
+  "exp.1.title": "Matrices",
+  "exp.1.text": "Website development for a web platform where matrices can be created.",
+
+  "exp.2.title": "Geometry Calculator",
+  "exp.2.text": "Development of an interactive calculator application for geometric figures, including calculating area, volume, and perimeter.",
+
 
   
 "portfolio.title": "Projects",

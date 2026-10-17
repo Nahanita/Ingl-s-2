@@ -54,16 +54,21 @@ const ES = {
   "exp.2.text":  "Construcción de una aplicación de calculadora interactiva para realizar operaciones de figuras gemotricas como encontrar el área, el volumen y el perimetro.",
 
 
-  "portfolio.title": "Proyectos",
+ 
+"portfolio.title": "Proyectos",
 
-  "project.1.title": "Calculadora geométrica",
-  "project.1.text": "Calculadora de áreas, volúmenes y figuras geométricas.",
+"project.1.title": "Calculadora geométrica",
+"project.1.text": "Calculadora de áreas, volúmenes y figuras geométricas.",
 
-  "project.2.title": "Calculadora de matrices",
-  "project.2.text": "Operaciones con matrices y sistemas de ecuaciones.",
+"project.2.title": "Calculadora de matrices",
+"project.2.text": "Operaciones con matrices y sistemas de ecuaciones.",
 
-  "project.3.title": "Actividades",
-  "project.3.text": "Aplicación web interactiva con condicionales y operaciones básicas usando JavaScript y CSS.",
+"project.3.title": "Actividades",
+"project.3.text": "Aplicación web interactiva con condicionales y operaciones básicas usando JavaScript y CSS.",
+
+"project.view": "Ver proyecto ↗",
+
+   
 
   "contact.title":         "Contacto",
   "contact.intro":         "¿Tienes un proyecto o una oportunidad laboral? ¡Escríbeme!",
@@ -124,13 +129,20 @@ const EN = {
   "exp.2.title": "Web Calculator App",
   "exp.2.text":  "Engineered an interactive web calculator using vanilla JavaScript developed inside the Eclipse IDE environment.",
 
-  "portfolio.title": "Projects",
-  "project.1.title": "NarrArt",
-  "project.1.text":  "HTML5, CSS3, JavaScript",
-  "project.2.title": "Calculator",
-  "project.2.text":  "JavaScript, CSS3",
-  "project.3.title": "RutaSafe",
-  "project.3.text":  "Laravel 11, Leaflet, CSS",
+  
+"portfolio.title": "Projects",
+
+"project.1.title": "Geometry Calculator",
+"project.1.text": "Calculate areas, volumes, and geometric figures.",
+
+"project.2.title": "Matrix Calculator",
+"project.2.text": "Matrix operations and systems of equations.",
+
+"project.3.title": "Activities",
+"project.3.text": "Interactive web application featuring conditionals and basic operations using JavaScript and CSS.",
+
+"project.view": "View project ↗",
+
 
   "contact.title":         "Contact",
   "contact.intro":         "Interested in working together or have an open position? Feel free to reach out.",

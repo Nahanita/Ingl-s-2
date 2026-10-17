@@ -53,13 +53,14 @@ const ES = {
   "exp.2.title": "Calculadora geometrica",
   "exp.2.text":  "Construcción de una aplicación de calculadora interactiva para realizar operaciones de figuras gemotricas como encontrar el área, el volumen y el perimetro.",
 
-  "portfolio.title": "Proyectos",
-  "project.1.title": "Matrices",
-  "project.1.text":  "HTML5, CSS3, JavaScript",
-  "project.2.title": "Calculadora geomtrica",
-  "project.2.text":  "JavaScript, CSS",
-  "project.3.title": "Operaciones",
-  "project.3.text":  "JavaScript, CSS",
+
+ "portfolio.title": "Proyectos",
+ "project.1.title": "Matrices",
+ "project.1.text":  "HTML5, CSS3, JavaScript",
+ "project.2.title": "Calculadora geomtrica",
+ "project.2.text":  "JavaScript, CSS",
+ "project.3.title": "Operaciones",
+ "project.3.text":  "JavaScript, CSS",
 
   "contact.title":         "Contacto",
   "contact.intro":         "¿Tienes un proyecto o una oportunidad laboral? ¡Escríbeme!",

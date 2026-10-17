@@ -49,8 +49,10 @@ const ES = {
   "edu.1.text":  "Formación en desarrollo web con HTML, CSS, JavaScript, Java, PHP y Laravel. Competencias en diseño de interfaces y gestión de bases de datos.",
 
   "exp.1.title": "Matrices",
+   "exp.type": "Proyecto académico",
   "exp.1.text":  "Desarrollo de sitio web para la plataforma web en donde se crean matrices.",
   "exp.2.title": "Calculadora geometrica",
+   "exp.type": "Proyecto académico",
   "exp.2.text":  "Construcción de una aplicación de calculadora interactiva para realizar operaciones de figuras geometricas como encontrar el área, el volumen y el perimetro.",
 
 
@@ -126,9 +128,11 @@ const EN = {
 
   
   "exp.1.title": "Matrices",
+   "exp.type": "Academic Project",
   "exp.1.text": "Website development for a web platform where matrices can be created.",
 
   "exp.2.title": "Geometry Calculator",
+   "exp.type": "Academic Project",
   "exp.2.text": "Development of an interactive calculator application for geometric figures, including calculating area, volume, and perimeter.",
 
 
